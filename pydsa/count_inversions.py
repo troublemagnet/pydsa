@@ -1,5 +1,5 @@
-	# Counting inversions in an array
-	# Complexity : O(nlog(n))
+# Counting inversions in an array
+# Complexity : O(nlog(n))
 
 
 def _merge(L, R):
@@ -35,10 +35,12 @@ def count_inversions(a):
 	"""
 	Counts the number of inversions in an array. 
 	Divide and conquer algorithm is used for same.
+
 	>>> from pydsa import count_inversions
 	>>> a = [1, 20, 6, 4, 5]
 	>>> count_inversions(a)
 	5
+	
 	"""
 	ans = merge_sort(a)
 	return ans[1]
